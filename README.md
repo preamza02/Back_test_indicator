@@ -5,4 +5,4 @@ now i have only EMA indicator but mo goal is to Use INDICATOR as many as i can.
 
 you can see how to use this on 
 - turtorial.ipynb 
-- for use this ingenetic algorithem
+- https://github.com/preamza02/genetic_algorithem_Best_EMA for use this in genetic algorithem
