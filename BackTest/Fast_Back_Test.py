@@ -75,7 +75,7 @@ class Fast_Back_Test():
                 # let thing about it later
                 pass
 
-    def process(self,show_grab = True):
+    def process(self,show_result = True):
         self.create_signal()
         for index,rows in self.price_data.iterrows():
             day = rows['date']
@@ -89,8 +89,9 @@ class Fast_Back_Test():
         self.update_asset_value(day)
         self.total_asset_value = self.money + self.asset
         self.total_profit = (100 * (self.money + self.asset)/self.init_money)-100
-        print(f'total_assert_value : {self.total_asset_value}')
-        print(f"total_profit = {(100 * (self.money + self.asset)/self.init_money)-100} %")
+        if show_result:
+            print(f'total_assert_value : {self.total_asset_value}')
+            print(f"total_profit = {(100 * (self.money + self.asset)/self.init_money)-100} %")
 
 
 class EMA_Fast_Back_Test(Fast_Back_Test):
