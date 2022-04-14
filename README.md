@@ -1,3 +1,1 @@
-# genetic_algo_strock_market
-
-this project 
+# Back-test-indicator
