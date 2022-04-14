@@ -148,7 +148,7 @@ class Back_Test(ABC): #this is abstract class cannot call
         print(f"win_rate = {100 * self.win_count/total_trade} %  total_trade = {total_trade} ")
         first_price = self.price_data.iloc[0]['price']
         last_price = self.price_data.iloc[-1]['price']
-        print(f'first price = {first_price} last price = {last_price } change = {100 * last_price/first_price } %')
+        print(f'first price = {first_price} last price = {last_price } change = {(100 * last_price/first_price) -100} %')
         if show_grab:
             self.show_grab()
         
